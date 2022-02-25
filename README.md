@@ -1,8 +1,25 @@
 # strapi-vercel-plugin-website-builder
 
-building website on Vercel, for Strapi V4.
+<p>
+    <!-- <a href="https://github.com/f00b4r/strapi-vercel-website-builder/actions">
+        <img src="https://badgen.net/github/checks/f00b4r/strapi-vercel-website-builder">
+    </a> -->
+    <a href="https://www.npmjs.com/package/strapi-vercel-website-builder">
+        <img src="https://badgen.net/npm/v/strapi-vercel-website-builder">
+    </a>
+    <a href="https://www.npmjs.com/package/strapi-vercel-website-builder">
+        <img src="https://badgen.net/npm/dt/strapi-vercel-website-builder">
+    </a>
+    <a href="/LICENSE">
+        <img src="https://badgen.net/github/license/karnpapon/strapi-vercel-website-builder">
+    </a>
+</p>
 
 ![](./docs/screenshot.png)
+
+## Overview 
+
+Building website on Vercel, for Strapi V4. in case you want to use Vercel as a platform for your website built on Strapi, without this plugin you can use webhook, but it can trigger a lot of pipelines. With this plugin, you will have a recreation of the vercel dashboard on your strapi dashboard, with which you can easily trigger deploys.
 
 ## Requirements
 
