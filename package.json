@@ -1,0 +1,66 @@
+{
+	"$schema": "https://json.schemastore.org/package",
+	"name": "strapi-vercel-website-builder",
+	"version": "1.0.0",
+	"description": "strapi plugin for manually building website on Vercel, support Strapi V4.",
+	"scripts": {
+		"lint": "eslint . --fix",
+		"format": "prettier --write **/*.{ts,js,json,yml}"
+	},
+	"author": {
+		"name": "Karnpapon Boonput",
+		"url": "https://github.com/karnpapon"
+	},
+	"maintainers": [
+		{
+			"name": "Karnpapon Boonput",
+			"url": "https://github.com/karnpapon"
+		}
+	],
+	"homepage": "https://github.com/karnpapon/strapi-vercel-website-builder#readme",
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/karnpapon/strapi-vercel-website-builder.git"
+	},
+	"bugs": {
+		"url": "https://github.com/karnpapon/strapi-vercel-website-builder/issues"
+	},
+	"dependencies": {},
+	"devDependencies": {
+		"@babel/core": "^7.17.2",
+		"@babel/eslint-parser": "^7.17.0",
+		"@babel/preset-react": "^7.16.7",
+		"eslint": "^8.8.0",
+		"eslint-config-prettier": "^8.3.0",
+		"eslint-plugin-node": "^11.1.0",
+		"eslint-plugin-react": "^7.28.0",
+		"prettier": "^2.5.1"
+	},
+	"peerDependencies": {
+		"@strapi/strapi": "^4.0.7",
+		"axios": "^0.24.0",
+		"react-query": "^3.24.3",
+		"yup": "^0.32.9"
+	},
+	"strapi": {
+		"displayName": "Vercel Website Builder",
+		"description": "A plugin for Strapi Headless CMS that provides the ability to trigger Vercel builds manually.",
+		"name": "vercel-website-builder",
+		"kind": "plugin"
+	},
+	"engines": {
+		"node": ">=12.x.x <=16.x.x",
+		"npm": ">=6.0.0"
+	},
+	"keywords": [
+		"strapi",
+		"strapi-plugin",
+		"plugin",
+		"strapi plugin",
+		"publishing",
+		"website-builder",
+		"website builder",
+		"build website"
+	],
+	"license": "MIT"
+}
