@@ -31,7 +31,7 @@ module.exports = ({ strapi }) => ({
 			const settings = await getPluginService(strapi, 'settingsService').get();
 			const data = await getPluginService(strapi, 'vercelService').getDeployment({ id, settings });
 			ctx.send(data);
-		} catch (error) {
+		} catch (e) {
 			ctx.send({ error: e }, 400);
 		}
 	},

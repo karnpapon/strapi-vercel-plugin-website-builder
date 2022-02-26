@@ -68,6 +68,42 @@ module.exports = ({ env }) => ({
 });
 ```
 
+you need to configure `strapi::security` in `config/middleware.js` for displaying deployed preview image ([Content Security Policy (CSP)](https://developer.mozilla.org/en-US/docs/Web/HTTP/CSP)).
+
+```javascript
+`./config/middleware.js`
+
+module.exports = [
+  "strapi::errors",
+  {
+    name: "strapi::security",
+    config: {
+      contentSecurityPolicy: {
+        directives: {
+          "script-src": ["'self'", "'unsafe-inline'", "cdn.jsdelivr.net"],
+          "img-src": [
+            "'self'",
+            "data:",
+            "cdn.jsdelivr.net",
+            "strapi.io",
+            "api.microlink.io",
+          ],
+        },
+      },
+    },
+  },
+  "strapi::cors",
+  "strapi::poweredBy",
+  "strapi::logger",
+  "strapi::query",
+  "strapi::body",
+  "strapi::favicon",
+  "strapi::public",
+];
+
+```
+
+
 ## Usage
 
 Once the plugin has been installed and configured, it will show in the sidebar as `Vercel Website Builder`.

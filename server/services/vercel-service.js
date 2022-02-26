@@ -3,6 +3,7 @@
 const axios = require('axios').default;
 // const { getPluginService } = require('../utils/getPluginService');
 
+// eslint-disable-next-line no-unused-vars
 module.exports = ({ strapi }) => ({
 	async getDeployments({ settings }) {
 		const projectId = settings.projectId;
