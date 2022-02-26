@@ -32,13 +32,13 @@ The installation requirements are the same as Strapi itself and can be found in 
 ## Installation
 
 ```sh
-npm install strapi-vercel-plugin-website-builder
+npm install strapi-vercel-website-builder
 ```
 
 **or**
 
 ```sh
-yarn add strapi-vercel-plugin-website-builder
+yarn add strapi-vercel-website-builder
 ```
 
 ## Configuration
@@ -47,8 +47,6 @@ The plugin configuration is stored in a config file located at `./config/plugins
 
 ![](./docs/config_0.png)
 ![](./docs/config_1.png)
-
-### Manual Configuration
 
 ```javascript
 
